@@ -61,20 +61,6 @@
       "source_url": "https://data.bls.gov/timeseries/APU0000717311"
     },
     {
-      "id": "APU0000708111",
-      "name": "Eggs",
-      "category": "Food",
-      "measure": "Average price, eggs, Grade A large",
-      "kind": "price",
-      "unit": "per dozen",
-      "decimals": 2,
-      "seasonally_adjusted": false,
-      "frequency": "monthly",
-      "phrase": "The average price of a dozen eggs",
-      "source": "Bureau of Labor Statistics",
-      "source_url": "https://data.bls.gov/timeseries/APU0000708111"
-    },
-    {
       "id": "APU0000706111",
       "name": "Chicken",
       "category": "Food",

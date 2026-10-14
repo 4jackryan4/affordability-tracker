@@ -12,7 +12,6 @@ The data refreshes itself. A GitHub Action runs every morning, pulls each series
 | Groceries | CPI-U, food at home | BLS | Monthly |
 | Ground beef | Average price per pound | BLS | Monthly |
 | Coffee | Average price per pound | BLS | Monthly |
-| Eggs | Average price per dozen, Grade A large | BLS | Monthly |
 | Chicken | Average price per pound, fresh whole | BLS | Monthly |
 | Milk | Average price per gallon, fresh whole | BLS | Monthly |
 | Bananas | Average price per pound | BLS | Monthly |
