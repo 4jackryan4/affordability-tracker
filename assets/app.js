@@ -38,9 +38,18 @@
   }
 
   // ---------------------------------------------------------------- load
+  // Notes on what's driving each price. Only approved notes show, unless the
+  // page is opened with ?drafts=1 for review.
+  var showDrafts = /[?&]drafts=1\b/.test(location.search);
+  var drivers = {};
+  var driversReq = fetch("config/drivers.json", { cache: "no-cache" })
+    .then(function (r) { return r.ok ? r.json() : {}; })
+    .then(function (d) { drivers = (d && d.notes) || {}; })
+    .catch(function () { drivers = {}; });
+
   fetch("data/stats.json", { cache: "no-cache" })
     .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
-    .then(render)
+    .then(function (data) { return driversReq.then(function () { render(data); }); })
     .catch(function () {
       metaEl.textContent = "No data yet.";
       grid.innerHTML =
@@ -128,6 +137,7 @@
       sub.map(function (t) { return '<p class="sub">' + esc(t) + "</p>"; }).join("") +
       notes +
       '<div class="chart" role="img" aria-label="' + esc(chartLabel(s, base)) + '"></div>' +
+      driverNote(s.id) +
       '<p class="quote">' + esc(s.sentence) + "</p>" +
       '<div class="actions"><button class="copy" type="button">Copy sentence</button>' +
       '<span class="sources">Source: <a href="' + esc(s.source_url) + '" target="_blank" rel="noopener">' + esc(s.source) + "</a> · " +
@@ -138,6 +148,21 @@
     var chart = makeChart(el.querySelector(".chart"), s, base);
     charts.push(chart);
     return el;
+  }
+
+  function driverNote(id) {
+    var n = drivers[id];
+    if (!n || !n.text || !(n.approved || showDrafts)) return "";
+    var asOf = n.as_of ? parseDate(n.as_of) : null;
+    var asOfText = asOf ? MONTHS[asOf.getUTCMonth()] + " " + asOf.getUTCDate() + ", " + asOf.getUTCFullYear() : "";
+    var links = (n.sources || []).map(function (src) {
+      return '<li><a href="' + esc(src.url) + '" target="_blank" rel="noopener">' + esc(src.title) + "</a></li>";
+    }).join("");
+    return '<section class="drivers' + (n.approved ? "" : " draft") + '">' +
+      '<h3>What’s driving it' + (n.approved ? "" : ' <span class="badge">Draft</span>') + "</h3>" +
+      "<p>" + esc(n.text) + "</p>" +
+      '<details><summary>Sources' + (asOfText ? " · analysis as of " + esc(asOfText) : "") + "</summary><ul>" + links + "</ul></details>" +
+      "</section>";
   }
 
   function chartLabel(s, base) {
