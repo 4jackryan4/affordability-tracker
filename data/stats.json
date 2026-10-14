@@ -115,7 +115,7 @@
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-14T18:33:05+00:00",
+   "fetched_at": "2026-10-14T18:39:57+00:00",
    "stale": false
   },
   {
@@ -227,7 +227,7 @@
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-14T18:33:05+00:00",
+   "fetched_at": "2026-10-14T18:39:57+00:00",
    "stale": false
   },
   {
@@ -340,7 +340,7 @@
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-14T18:33:05+00:00",
+   "fetched_at": "2026-10-14T18:39:57+00:00",
    "stale": false
   },
   {
@@ -453,7 +453,7 @@
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-14T18:33:05+00:00",
+   "fetched_at": "2026-10-14T18:39:57+00:00",
    "stale": false
   },
   {
@@ -566,7 +566,346 @@
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-14T18:33:05+00:00",
+   "fetched_at": "2026-10-14T18:39:57+00:00",
+   "stale": false
+  },
+  {
+   "id": "APU0000706111",
+   "name": "Chicken",
+   "category": "Food",
+   "measure": "Average price, chicken, fresh, whole",
+   "kind": "price",
+   "unit": "per pound",
+   "decimals": 2,
+   "seasonally_adjusted": false,
+   "frequency": "monthly",
+   "source": "Bureau of Labor Statistics",
+   "source_url": "https://data.bls.gov/timeseries/APU0000706111",
+   "fred_url": "https://fred.stlouisfed.org/series/APU0000706111",
+   "baseline_value": 2.061,
+   "baseline_points": 1,
+   "baseline_display": "$2.061",
+   "latest_date": "2026-09-01",
+   "latest_period": "September 2026",
+   "latest_value": 2.064,
+   "latest_display": "$2.064",
+   "change": 0.0030000000000001137,
+   "pct_change": 0.1455604075691467,
+   "year_ago_date": "2025-09-01",
+   "year_ago_value": 2.061,
+   "year_ago_pct_change": 0.1455604075691467,
+   "year_ago_change": 0.0030000000000001137,
+   "sentence": "The average price of a pound of whole chicken was $2.064 per pound in September 2026, up 0.1% from $2.061 in January 2025 (Bureau of Labor Statistics).",
+   "observations": [
+    [
+     "2025-01-01",
+     2.061
+    ],
+    [
+     "2025-02-01",
+     2.051
+    ],
+    [
+     "2025-03-01",
+     2.064
+    ],
+    [
+     "2025-04-01",
+     2.059
+    ],
+    [
+     "2025-05-01",
+     2.061
+    ],
+    [
+     "2025-06-01",
+     2.086
+    ],
+    [
+     "2025-07-01",
+     2.078
+    ],
+    [
+     "2025-08-01",
+     2.076
+    ],
+    [
+     "2025-09-01",
+     2.061
+    ],
+    [
+     "2025-11-01",
+     2.044
+    ],
+    [
+     "2025-12-01",
+     2.02
+    ],
+    [
+     "2026-01-01",
+     2.041
+    ],
+    [
+     "2026-02-01",
+     2.049
+    ],
+    [
+     "2026-03-01",
+     2.033
+    ],
+    [
+     "2026-04-01",
+     2.026
+    ],
+    [
+     "2026-05-01",
+     2.036
+    ],
+    [
+     "2026-06-01",
+     2.044
+    ],
+    [
+     "2026-07-01",
+     2.005
+    ],
+    [
+     "2026-08-01",
+     2.012
+    ],
+    [
+     "2026-09-01",
+     2.064
+    ]
+   ],
+   "fetched_via": "fred-api",
+   "fetched_at": "2026-10-14T18:39:57+00:00",
+   "stale": false
+  },
+  {
+   "id": "APU0000709112",
+   "name": "Milk",
+   "category": "Food",
+   "measure": "Average price, milk, fresh, whole, fortified",
+   "kind": "price",
+   "unit": "per gallon",
+   "decimals": 2,
+   "seasonally_adjusted": false,
+   "frequency": "monthly",
+   "source": "Bureau of Labor Statistics",
+   "source_url": "https://data.bls.gov/timeseries/APU0000709112",
+   "fred_url": "https://fred.stlouisfed.org/series/APU0000709112",
+   "baseline_value": 4.025,
+   "baseline_points": 1,
+   "baseline_display": "$4.03",
+   "latest_date": "2026-09-01",
+   "latest_period": "September 2026",
+   "latest_value": 4.106,
+   "latest_display": "$4.11",
+   "change": 0.08099999999999952,
+   "pct_change": 2.012422360248435,
+   "year_ago_date": "2025-09-01",
+   "year_ago_value": 4.129,
+   "year_ago_pct_change": -0.5570356018406318,
+   "year_ago_change": -0.022999999999999687,
+   "sentence": "The average price of a gallon of whole milk was $4.11 per gallon in September 2026, up 2.0% from $4.03 in January 2025 (Bureau of Labor Statistics).",
+   "observations": [
+    [
+     "2025-01-01",
+     4.025
+    ],
+    [
+     "2025-02-01",
+     4.026
+    ],
+    [
+     "2025-03-01",
+     4.05
+    ],
+    [
+     "2025-04-01",
+     4.074
+    ],
+    [
+     "2025-05-01",
+     4.022
+    ],
+    [
+     "2025-06-01",
+     4.029
+    ],
+    [
+     "2025-07-01",
+     4.162
+    ],
+    [
+     "2025-08-01",
+     4.171
+    ],
+    [
+     "2025-09-01",
+     4.129
+    ],
+    [
+     "2025-11-01",
+     3.997
+    ],
+    [
+     "2025-12-01",
+     4.047
+    ],
+    [
+     "2026-01-01",
+     4.1
+    ],
+    [
+     "2026-02-01",
+     4.026
+    ],
+    [
+     "2026-03-01",
+     4.067
+    ],
+    [
+     "2026-04-01",
+     4.136
+    ],
+    [
+     "2026-05-01",
+     4.217
+    ],
+    [
+     "2026-06-01",
+     4.317
+    ],
+    [
+     "2026-07-01",
+     4.313
+    ],
+    [
+     "2026-08-01",
+     4.229
+    ],
+    [
+     "2026-09-01",
+     4.106
+    ]
+   ],
+   "fetched_via": "fred-api",
+   "fetched_at": "2026-10-14T18:39:57+00:00",
+   "stale": false
+  },
+  {
+   "id": "APU0000711211",
+   "name": "Bananas",
+   "category": "Food",
+   "measure": "Average price, bananas",
+   "kind": "price",
+   "unit": "per pound",
+   "decimals": 2,
+   "seasonally_adjusted": false,
+   "frequency": "monthly",
+   "source": "Bureau of Labor Statistics",
+   "source_url": "https://data.bls.gov/timeseries/APU0000711211",
+   "fred_url": "https://fred.stlouisfed.org/series/APU0000711211",
+   "baseline_value": 0.621,
+   "baseline_points": 1,
+   "baseline_display": "$0.621",
+   "latest_date": "2026-09-01",
+   "latest_period": "September 2026",
+   "latest_value": 0.656,
+   "latest_display": "$0.656",
+   "change": 0.03500000000000003,
+   "pct_change": 5.636070853462162,
+   "year_ago_date": "2025-09-01",
+   "year_ago_value": 0.67,
+   "year_ago_pct_change": -2.0895522388059717,
+   "year_ago_change": -0.014000000000000012,
+   "sentence": "The average price of a pound of bananas was $0.656 per pound in September 2026, up 5.6% from $0.621 in January 2025 (Bureau of Labor Statistics).",
+   "observations": [
+    [
+     "2025-01-01",
+     0.621
+    ],
+    [
+     "2025-02-01",
+     0.619
+    ],
+    [
+     "2025-03-01",
+     0.625
+    ],
+    [
+     "2025-04-01",
+     0.635
+    ],
+    [
+     "2025-05-01",
+     0.655
+    ],
+    [
+     "2025-06-01",
+     0.654
+    ],
+    [
+     "2025-07-01",
+     0.657
+    ],
+    [
+     "2025-08-01",
+     0.666
+    ],
+    [
+     "2025-09-01",
+     0.67
+    ],
+    [
+     "2025-11-01",
+     0.664
+    ],
+    [
+     "2025-12-01",
+     0.656
+    ],
+    [
+     "2026-01-01",
+     0.653
+    ],
+    [
+     "2026-02-01",
+     0.653
+    ],
+    [
+     "2026-03-01",
+     0.657
+    ],
+    [
+     "2026-04-01",
+     0.654
+    ],
+    [
+     "2026-05-01",
+     0.646
+    ],
+    [
+     "2026-06-01",
+     0.645
+    ],
+    [
+     "2026-07-01",
+     0.65
+    ],
+    [
+     "2026-08-01",
+     0.652
+    ],
+    [
+     "2026-09-01",
+     0.656
+    ]
+   ],
+   "fetched_via": "fred-api",
+   "fetched_at": "2026-10-14T18:39:57+00:00",
    "stale": false
   },
   {
@@ -678,7 +1017,7 @@
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-14T18:33:05+00:00",
+   "fetched_at": "2026-10-14T18:39:57+00:00",
    "stale": false
   },
   {
@@ -1091,7 +1430,7 @@
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-14T18:33:05+00:00",
+   "fetched_at": "2026-10-14T18:39:57+00:00",
    "stale": false
   },
   {
@@ -1205,7 +1544,7 @@
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-14T18:33:05+00:00",
+   "fetched_at": "2026-10-14T18:39:57+00:00",
    "stale": false
   },
   {
@@ -1319,7 +1658,7 @@
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-14T18:33:05+00:00",
+   "fetched_at": "2026-10-14T18:39:57+00:00",
    "stale": false
   },
   {
@@ -1724,7 +2063,7 @@
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-14T18:33:05+00:00",
+   "fetched_at": "2026-10-14T18:39:57+00:00",
    "stale": false
   },
   {
@@ -2129,9 +2468,9 @@
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-14T18:33:05+00:00",
+   "fetched_at": "2026-10-14T18:39:57+00:00",
    "stale": false
   }
  ],
- "generated_at": "2026-10-14T18:33:05+00:00"
+ "generated_at": "2026-10-14T18:39:57+00:00"
 }
