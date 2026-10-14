@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Affordability Tracker</title>
+  <meta name="description" content="What families pay for groceries, housing and energy, measured against January 2025. Updated daily from BLS, EIA and Freddie Mac data.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="masthead">
+    <div class="wrap">
+      <p class="eyebrow">Affordability Tracker</p>
+      <h1>What families are paying now, compared with January 2025</h1>
+      <p class="lede">Official price data from the Bureau of Labor Statistics, the Energy Information Administration and Freddie Mac, pulled automatically every day. Every number links to its source.</p>
+      <p class="meta" id="meta">Loading data…</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <nav class="filters" aria-label="Filter by category" id="filters"></nav>
+    <section class="grid" id="grid" aria-live="polite"></section>
+
+    <section class="method" id="method">
+      <h2>How these numbers are calculated</h2>
+      <ul>
+        <li><strong>Baseline.</strong> Every change is measured from <strong>January 2025</strong>. For monthly series that is the January 2025 reading. For weekly series (gas, diesel, mortgage rates) it is the average of every week in January 2025, so one unusual week can't skew it.</li>
+        <li><strong>Latest.</strong> The most recent reading the agency has published. Monthly BLS data runs about six weeks behind; weekly data runs a few days behind.</li>
+        <li><strong>Percent change</strong> is (latest − baseline) ÷ baseline. If rounding the prices shown would give a different percent, the page shows an extra decimal place so anyone re-checking the math gets the same answer.</li>
+        <li><strong>Seasonal series.</strong> Electricity and utility gas prices are not seasonally adjusted and swing with the weather. For those, the year-over-year change is the cleaner comparison and is shown on each card.</li>
+        <li><strong>Mortgage payments</strong> assume a new 30-year fixed loan of $400,000, principal and interest only.</li>
+        <li><strong>Where the data comes from.</strong> All series are pulled through FRED (Federal Reserve Bank of St. Louis), which republishes the agencies' official figures unchanged. Each card links to both the agency and the FRED series.</li>
+      </ul>
+      <p class="downloads">Download: <a href="data/summary.csv">summary (CSV)</a> · <a href="data/stats.json">full data (JSON)</a></p>
+    </section>
+  </main>
+
+  <footer class="wrap footer">
+    <p>Figures update automatically. Always confirm the period and source before citing a number.</p>
+  </footer>
+
+  <div class="tooltip" id="tooltip" role="status" hidden></div>
+  <script src="assets/app.js"></script>
+</body>
+</html>
