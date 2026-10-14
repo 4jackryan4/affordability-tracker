@@ -75,6 +75,48 @@
       "source_url": "https://data.bls.gov/timeseries/APU0000708111"
     },
     {
+      "id": "APU0000706111",
+      "name": "Chicken",
+      "category": "Food",
+      "measure": "Average price, chicken, fresh, whole",
+      "kind": "price",
+      "unit": "per pound",
+      "decimals": 2,
+      "seasonally_adjusted": false,
+      "frequency": "monthly",
+      "phrase": "The average price of a pound of whole chicken",
+      "source": "Bureau of Labor Statistics",
+      "source_url": "https://data.bls.gov/timeseries/APU0000706111"
+    },
+    {
+      "id": "APU0000709112",
+      "name": "Milk",
+      "category": "Food",
+      "measure": "Average price, milk, fresh, whole, fortified",
+      "kind": "price",
+      "unit": "per gallon",
+      "decimals": 2,
+      "seasonally_adjusted": false,
+      "frequency": "monthly",
+      "phrase": "The average price of a gallon of whole milk",
+      "source": "Bureau of Labor Statistics",
+      "source_url": "https://data.bls.gov/timeseries/APU0000709112"
+    },
+    {
+      "id": "APU0000711211",
+      "name": "Bananas",
+      "category": "Food",
+      "measure": "Average price, bananas",
+      "kind": "price",
+      "unit": "per pound",
+      "decimals": 2,
+      "seasonally_adjusted": false,
+      "frequency": "monthly",
+      "phrase": "The average price of a pound of bananas",
+      "source": "Bureau of Labor Statistics",
+      "source_url": "https://data.bls.gov/timeseries/APU0000711211"
+    },
+    {
       "id": "CUSR0000SEHA",
       "name": "Rent",
       "category": "Housing",

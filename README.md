@@ -13,6 +13,9 @@ The data refreshes itself. A GitHub Action runs every morning, pulls each series
 | Ground beef | Average price per pound | BLS | Monthly |
 | Coffee | Average price per pound | BLS | Monthly |
 | Eggs | Average price per dozen, Grade A large | BLS | Monthly |
+| Chicken | Average price per pound, fresh whole | BLS | Monthly |
+| Milk | Average price per gallon, fresh whole | BLS | Monthly |
+| Bananas | Average price per pound | BLS | Monthly |
 | Rent | CPI-U, rent of primary residence | BLS | Monthly |
 | Mortgage rates | 30-year fixed, weekly average | Freddie Mac PMMS | Weekly |
 | Electricity | Average price per kWh | BLS | Monthly |
