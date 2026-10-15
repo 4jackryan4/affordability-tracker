@@ -179,3 +179,11 @@ td.num, th.num { text-align: right; }
 .footer { padding-top: 18px; padding-bottom: 36px; font-size: 13px; color: var(--text-3); }
 
 [hidden] { display: none !important; }
+
+/* Event lines (Iran war, 2025 tariffs) */
+.event { margin: 4px 0 0; font-size: 14px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.event span { font-weight: 500; color: var(--text-2); }
+.chart .evline { stroke: var(--text-3); stroke-width: 1; }
+.chart .evband { fill: var(--surface-2); }
+.chart .evlabel { fill: var(--text-2); font-weight: 600; }
+.chart .reflabel, .chart .evlabel { paint-order: stroke; stroke: var(--surface); stroke-width: 3px; stroke-linejoin: round; }

@@ -124,6 +124,7 @@
       '<p class="measure">' + esc(s.measure) + "</p>" +
       '<div class="figures"><div class="latest">' + headline + "</div>" +
       (change ? '<div class="change">' + change + "</div>" : "") + "</div>" +
+      eventLines(s) +
       '<p class="period">Latest: ' + esc(latestPeriod) + "</p>" +
       sub.map(function (t) { return '<p class="sub">' + esc(t) + "</p>"; }).join("") +
       notes +
@@ -138,6 +139,25 @@
     var chart = makeChart(el.querySelector(".chart"), s, base);
     charts.push(chart);
     return el;
+  }
+
+  // One line per event (Iran war, 2025 tariffs), under the "since January 2025" line.
+  function eventLines(s) {
+    return (s.events || []).map(function (ev) {
+      var amount = s.kind === "rate"
+        ? arrow(ev.change) + " " + signed(ev.change, 2) + " pts"
+        : arrow(ev.pct_change) + " " + signed(ev.pct_change, 1) + "%";
+      var detail;
+      if (ev.kind === "window") {
+        detail = ev.label + ", " + ev.range_label +
+          (s.kind === "index" ? "" : " (" + ev.from_display + " → " + ev.to_display + ")");
+      } else if (s.frequency === "weekly") {
+        detail = ev.label + " (" + ev.from_display + " the week before)";
+      } else {
+        detail = ev.label + " (from " + periodShort(ev.from_date, s.frequency) + ")";
+      }
+      return '<p class="event">' + amount + " <span>" + esc(detail) + "</span></p>";
+    }).join("");
   }
 
   function chartLabel(s, base) {
@@ -250,6 +270,24 @@
         lbl.textContent = MONTHS[dt.getUTCMonth()] + " ’" + String(dt.getUTCFullYear()).slice(2);
       }
 
+      // event markers: a shaded band for a window (tariffs), a line for a start date (war)
+      (s.events || []).forEach(function (ev) {
+        var es = parseDate(ev.start).getTime();
+        if (es < t0 || es > t1) return;
+        var ex0 = x(es), lx;
+        if (ev.kind === "window" && ev.end) {
+          var ex1 = x(Math.min(parseDate(ev.end).getTime(), t1));
+          svgEl("rect", { class: "evband", x: ex0, y: m.t, width: Math.max(1, ex1 - ex0), height: ih }, svg);
+          lx = ex0 + 4;
+        } else {
+          var xx = Math.round(ex0) + 0.5;
+          svgEl("line", { class: "evline", x1: xx, x2: xx, y1: m.t, y2: m.t + ih }, svg);
+          lx = xx - 4; // label to the left: prices were lower before the event, so the top-left is clear
+        }
+        var lab = svgEl("text", { class: "evlabel", x: lx, y: m.t + 10, "text-anchor": ev.kind === "window" ? "start" : "end" }, svg);
+        lab.textContent = ev.short || "";
+      });
+
       // area + line
       var linePts = pts.map(function (p) { return x(p.t).toFixed(1) + "," + y(p.v).toFixed(1); });
       svgEl("path", { class: "area", d: "M" + x(t0) + "," + (m.t + ih) + " L" + linePts.join(" L") + " L" + x(t1) + "," + (m.t + ih) + " Z" }, svg);
@@ -258,15 +296,40 @@
       var ry = Math.round(y(ref)) + 0.5;
       svgEl("line", { class: "refline", x1: m.l, x2: w - m.r, y1: ry, y2: ry }, svg);
       var last = pts[pts.length - 1];
-      var below = last.v >= ref;
-      var rl = svgEl("text", { class: "reflabel", x: m.l + 6, y: below ? ry + 13 : ry - 5, "text-anchor": "start" }, svg);
+      var rl = svgEl("text", { class: "reflabel", x: m.l + 6, y: ry + 13, "text-anchor": "start" }, svg);
       rl.textContent = baseLabel + (s.frequency === "weekly" ? " avg." : "") + " level";
-      // keep the label off the line if the series starts on the label's side
-      if (Math.abs(y(pts[0].v) - (below ? ry + 9 : ry - 9)) < 10) {
-        rl.setAttribute("x", w - m.r - 4); rl.setAttribute("text-anchor", "end");
-        rl.setAttribute("y", below ? ry - 5 : ry + 13);
-        if (Math.abs(y(last.v) - (below ? ry - 9 : ry + 9)) < 14) rl.setAttribute("x", w - m.r - 18);
+      // Place the label where the line (and end dot) crosses it least: try
+      // left/right ends, above/below the reference line.
+      var lw = rl.getComputedTextLength ? rl.getComputedTextLength() : 130;
+      function lineYAt(px) {
+        for (var i = 1; i < pts.length; i++) {
+          var xa = x(pts[i - 1].t), xb = x(pts[i].t);
+          if (px >= xa && px <= xb) {
+            var f = xb === xa ? 0 : (px - xa) / (xb - xa);
+            return y(pts[i - 1].v) + f * (y(pts[i].v) - y(pts[i - 1].v));
+          }
+        }
+        return null;
       }
+      var cands = [
+        { x: m.l + 6, anchor: "start", y: ry + 13 }, { x: m.l + 6, anchor: "start", y: ry - 5 },
+        { x: w - m.r - 12, anchor: "end", y: ry + 13 }, { x: w - m.r - 12, anchor: "end", y: ry - 5 }
+      ];
+      var bestC = cands[0], bestScore = Infinity;
+      cands.forEach(function (c, ci) {
+        var bx0 = c.anchor === "start" ? c.x : c.x - lw, bx1 = bx0 + lw;
+        var by0 = c.y - 11, by1 = c.y + 3, score = 0;
+        for (var px = bx0; px <= bx1; px += 3) {
+          var ly = lineYAt(px);
+          if (ly !== null && ly >= by0 - 3 && ly <= by1 + 3) score++;
+        }
+        var dx = x(last.t), dy = y(last.v);
+        if (dx >= bx0 - 8 && dx <= bx1 + 8 && dy >= by0 - 8 && dy <= by1 + 8) score += 20;
+        if (by0 < m.t || by1 > m.t + ih) score += 50;
+        score += ci * 0.01; // stable preference order on ties
+        if (score < bestScore) { bestScore = score; bestC = c; }
+      });
+      rl.setAttribute("x", bestC.x); rl.setAttribute("y", bestC.y); rl.setAttribute("text-anchor", bestC.anchor);
 
       svgEl("path", { class: "line", d: "M" + linePts.join(" L") }, svg);
       svgEl("circle", { class: "dot", cx: x(last.t), cy: y(last.v), r: 4.5 }, svg);

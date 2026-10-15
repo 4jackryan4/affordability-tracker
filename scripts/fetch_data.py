@@ -167,6 +167,76 @@ def build_sentence(s: dict, st: dict, baseline_label: str) -> str:
 
 # ---------------------------------------------------------------- stats
 
+def display_pair(s: dict, base: float, latest: float) -> tuple[str, str]:
+    """Format two values for display. If the rounded figures shown would give a
+    different percent than the true one, show one more decimal so anyone
+    re-checking the math gets the same answer."""
+    decimals = s.get("decimals", 2)
+    latest_disp = fmt_value(latest, s)
+    base_disp = fmt_value(base, s)
+    if s["kind"] == "price":
+        pct = (latest - base) / base * 100
+        shown_pct = (round(latest, decimals) - round(base, decimals)) / round(base, decimals) * 100
+        if round(shown_pct, 1) != round(pct, 1):
+            # Drop a trailing zero ($6.730 -> $6.73); it doesn't change the math.
+            def trim(text: str) -> str:
+                return text[:-1] if text.endswith("0") and len(text.split(".")[-1]) > decimals else text
+            latest_disp = trim(fmt_value(latest, s, decimals + 1))
+            base_disp = trim(fmt_value(base, s, decimals + 1))
+    return base_disp, latest_disp
+
+
+def _period_end(d: str, frequency: str) -> date:
+    dt = date.fromisoformat(d)
+    if frequency == "monthly":
+        nxt = date(dt.year + (dt.month == 12), dt.month % 12 + 1, 1)
+        return nxt - timedelta(days=1)
+    return dt
+
+
+def compute_event(s: dict, obs: list[tuple[str, float]], ev_id: str, ev: dict) -> dict | None:
+    """Change across an event.
+
+    'since'  : last reading fully before the event -> latest reading.
+    'window' : last reading fully before the start -> last reading on or before the end.
+    "Fully before" means the reading's period ends on or before the start date
+    (for monthly data, the whole month).
+    """
+    start = date.fromisoformat(ev["start"])
+    before = [(d, v) for d, v in obs if _period_end(d, s["frequency"]) <= start]
+    if not before:
+        return None
+    from_date, from_val = before[-1]
+    if ev["kind"] == "window":
+        end = date.fromisoformat(ev["end"])
+        upto = [(d, v) for d, v in obs if date.fromisoformat(d) <= end]
+        to_date, to_val = upto[-1]
+    else:
+        to_date, to_val = obs[-1]
+    if to_date <= from_date:
+        return None
+    from_disp, to_disp = display_pair(s, from_val, to_val)
+    return {
+        "id": ev_id,
+        "kind": ev["kind"],
+        "label": ev["label"],
+        "short": ev.get("short", ""),
+        "range_label": ev.get("range_label", ""),
+        "start": ev["start"],
+        "end": ev.get("end"),
+        "from_date": from_date,
+        "from_period": period_label(from_date, s["frequency"]),
+        "from_value": from_val,
+        "from_display": from_disp,
+        "to_date": to_date,
+        "to_period": period_label(to_date, s["frequency"]),
+        "to_value": to_val,
+        "to_display": to_disp,
+        "change": to_val - from_val,
+        "pct_change": (to_val - from_val) / from_val * 100,
+    }
+
+
 def compute(s: dict, obs: list[tuple[str, float]], baseline: dict) -> dict:
     base_obs = [v for d, v in obs if baseline["start"] <= d <= baseline["end"]]
     if not base_obs:
@@ -175,22 +245,7 @@ def compute(s: dict, obs: list[tuple[str, float]], baseline: dict) -> dict:
     latest_date, latest = obs[-1]
     change = latest - base
     pct = change / base * 100
-
-    decimals = s.get("decimals", 2)
-    latest_disp = fmt_value(latest, s)
-    base_disp = fmt_value(base, s)
-    # If the rounded figures shown on the page would give a different percent
-    # than the true one, show more precision so anyone re-checking gets the
-    # same answer.
-    if s["kind"] == "price":
-        shown_pct = (round(latest, decimals) - round(base, decimals)) / round(base, decimals) * 100
-        if round(shown_pct, 1) != round(pct, 1):
-            # One more decimal; drop a trailing zero ($6.730 -> $6.73) since
-            # that doesn't change the value anyone re-checks against.
-            def trim(text: str) -> str:
-                return text[:-1] if text.endswith("0") and len(text.split(".")[-1]) > decimals else text
-            latest_disp = trim(fmt_value(latest, s, decimals + 1))
-            base_disp = trim(fmt_value(base, s, decimals + 1))
+    base_disp, latest_disp = display_pair(s, base, latest)
 
     st = {
         "baseline_value": base,
@@ -246,6 +301,12 @@ def main() -> int:
             if not obs:
                 raise ValueError("no observations returned")
             entry.update(compute(s, obs, baseline))
+            evs = []
+            for ev_id in s.get("events", []):
+                ev = compute_event(s, obs, ev_id, config["events"][ev_id])
+                if ev:
+                    evs.append(ev)
+            entry["events"] = evs
             entry["observations"] = [[d, v] for d, v in obs]
             entry["fetched_via"] = via
             entry["fetched_at"] = now.isoformat()
@@ -285,6 +346,7 @@ def main() -> int:
         w = csv.writer(fh)
         w.writerow(["stat", "measure", "latest_period", "latest_value", "baseline_jan_2025",
                     "change", "pct_change_since_jan_2025", "pct_change_year_over_year",
+                    "pct_change_since_iran_war", "pct_change_during_2025_tariffs",
                     "source", "fred_series", "sentence"])
         for e in results:
             if "latest_value" not in e:
@@ -292,6 +354,8 @@ def main() -> int:
             w.writerow([e["name"], e["measure"], e["latest_period"], round(e["latest_value"], 4),
                         round(e["baseline_value"], 4), round(e["change"], 4), round(e["pct_change"], 2),
                         round(e["year_ago_pct_change"], 2) if "year_ago_pct_change" in e else "",
+                        *[next((round(x["pct_change"], 2) for x in e.get("events", []) if x["id"] == k), "")
+                          for k in ("iran_war", "tariffs_2025")],
                         e["source"], e["id"], e["sentence"]])
 
     if failures:
