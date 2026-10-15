@@ -17,6 +17,27 @@
    "frequency": "monthly",
    "source": "Bureau of Labor Statistics",
    "source_url": "https://www.bls.gov/cpi/",
+   "events": [
+    {
+     "id": "iran_war",
+     "kind": "since",
+     "label": "since the Iran war began",
+     "short": "Iran war",
+     "range_label": "",
+     "start": "2026-02-28",
+     "end": null,
+     "from_date": "2026-02-01",
+     "from_period": "February 2026",
+     "from_value": 327.46,
+     "from_display": "327.5",
+     "to_date": "2026-09-01",
+     "to_period": "September 2026",
+     "to_value": 336.298,
+     "to_display": "336.3",
+     "change": 8.838000000000022,
+     "pct_change": 2.698955597630252
+    }
+   ],
    "fred_url": "https://fred.stlouisfed.org/series/CPIAUCSL",
    "baseline_value": 318.961,
    "baseline_points": 1,
@@ -115,7 +136,7 @@
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-14T18:39:57+00:00",
+   "fetched_at": "2026-10-15T14:59:15+00:00",
    "stale": false
   },
   {
@@ -144,6 +165,7 @@
    "year_ago_pct_change": 1.7655447803764874,
    "year_ago_change": 5.5709999999999695,
    "sentence": "Grocery prices rose 3.3% between January 2025 and September 2026 (Bureau of Labor Statistics, CPI-U, food at home).",
+   "events": [],
    "observations": [
     [
      "2025-01-01",
@@ -227,7 +249,7 @@
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-14T18:39:57+00:00",
+   "fetched_at": "2026-10-15T14:59:15+00:00",
    "stale": false
   },
   {
@@ -257,6 +279,7 @@
    "year_ago_pct_change": 7.417365174758807,
    "year_ago_change": 0.4689999999999994,
    "sentence": "The average price of a pound of ground beef was $6.792 per pound in September 2026, up 22.5% from $5.545 in January 2025 (Bureau of Labor Statistics).",
+   "events": [],
    "observations": [
     [
      "2025-01-01",
@@ -340,7 +363,7 @@
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-14T18:39:57+00:00",
+   "fetched_at": "2026-10-15T14:59:15+00:00",
    "stale": false
   },
   {
@@ -370,6 +393,7 @@
    "year_ago_pct_change": 2.1118284276179167,
    "year_ago_change": 0.1930000000000014,
    "sentence": "The average price of a pound of ground coffee was $9.332 per pound in September 2026, up 33.0% from $7.019 in January 2025 (Bureau of Labor Statistics).",
+   "events": [],
    "observations": [
     [
      "2025-01-01",
@@ -453,7 +477,7 @@
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-14T18:39:57+00:00",
+   "fetched_at": "2026-10-15T14:59:15+00:00",
    "stale": false
   },
   {
@@ -483,6 +507,7 @@
    "year_ago_pct_change": 0.1455604075691467,
    "year_ago_change": 0.0030000000000001137,
    "sentence": "The average price of a pound of whole chicken was $2.064 per pound in September 2026, up 0.1% from $2.061 in January 2025 (Bureau of Labor Statistics).",
+   "events": [],
    "observations": [
     [
      "2025-01-01",
@@ -566,7 +591,7 @@
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-14T18:39:57+00:00",
+   "fetched_at": "2026-10-15T14:59:15+00:00",
    "stale": false
   },
   {
@@ -596,6 +621,7 @@
    "year_ago_pct_change": -0.5570356018406318,
    "year_ago_change": -0.022999999999999687,
    "sentence": "The average price of a gallon of whole milk was $4.11 per gallon in September 2026, up 2.0% from $4.03 in January 2025 (Bureau of Labor Statistics).",
+   "events": [],
    "observations": [
     [
      "2025-01-01",
@@ -679,7 +705,7 @@
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-14T18:39:57+00:00",
+   "fetched_at": "2026-10-15T14:59:15+00:00",
    "stale": false
   },
   {
@@ -709,6 +735,7 @@
    "year_ago_pct_change": -2.0895522388059717,
    "year_ago_change": -0.014000000000000012,
    "sentence": "The average price of a pound of bananas was $0.656 per pound in September 2026, up 5.6% from $0.621 in January 2025 (Bureau of Labor Statistics).",
+   "events": [],
    "observations": [
     [
      "2025-01-01",
@@ -792,7 +819,7 @@
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-14T18:39:57+00:00",
+   "fetched_at": "2026-10-15T14:59:15+00:00",
    "stale": false
   },
   {
@@ -821,6 +848,7 @@
    "year_ago_pct_change": 2.782056284613109,
    "year_ago_change": 12.19199999999995,
    "sentence": "Rents rose 5.0% between January 2025 and September 2026 (Bureau of Labor Statistics, CPI-U, rent of primary residence).",
+   "events": [],
    "observations": [
     [
      "2025-01-01",
@@ -904,7 +932,7 @@
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-14T18:39:57+00:00",
+   "fetched_at": "2026-10-15T14:59:15+00:00",
    "stale": false
   },
   {
@@ -920,6 +948,27 @@
    "loan_amount": 400000,
    "source": "Freddie Mac Primary Mortgage Market Survey",
    "source_url": "https://www.freddiemac.com/pmms",
+   "events": [
+    {
+     "id": "iran_war",
+     "kind": "since",
+     "label": "since the Iran war began",
+     "short": "Iran war",
+     "range_label": "",
+     "start": "2026-02-28",
+     "end": null,
+     "from_date": "2026-02-26",
+     "from_period": "the week of Feb. 26, 2026",
+     "from_value": 5.98,
+     "from_display": "5.98%",
+     "to_date": "2026-10-08",
+     "to_period": "the week of Oct. 8, 2026",
+     "to_value": 7.4,
+     "to_display": "7.40%",
+     "change": 1.42,
+     "pct_change": 23.74581939799331
+    }
+   ],
    "fred_url": "https://fred.stlouisfed.org/series/MORTGAGE30US",
    "baseline_value": 6.958,
    "baseline_points": 5,
@@ -1317,7 +1366,7 @@
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-14T18:39:57+00:00",
+   "fetched_at": "2026-10-15T14:59:15+00:00",
    "stale": false
   },
   {
@@ -1348,6 +1397,7 @@
    "year_ago_pct_change": 4.255319148936175,
    "year_ago_change": 0.008000000000000007,
    "sentence": "The average price of electricity was $0.196 per kWh in September 2026, up 9.5% from $0.179 in January 2025 (Bureau of Labor Statistics).",
+   "events": [],
    "observations": [
     [
      "2025-01-01",
@@ -1431,7 +1481,7 @@
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-14T18:39:57+00:00",
+   "fetched_at": "2026-10-15T14:59:15+00:00",
    "stale": false
   },
   {
@@ -1462,6 +1512,7 @@
    "year_ago_pct_change": 5.393676379417233,
    "year_ago_change": 0.08699999999999997,
    "sentence": "The average price of utility natural gas was $1.700 per therm in September 2026, up 9.5% from $1.552 in January 2025 (Bureau of Labor Statistics).",
+   "events": [],
    "observations": [
     [
      "2025-01-01",
@@ -1545,7 +1596,7 @@
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-14T18:39:57+00:00",
+   "fetched_at": "2026-10-15T14:59:15+00:00",
    "stale": false
   },
   {
@@ -1560,6 +1611,27 @@
    "frequency": "weekly",
    "source": "U.S. Energy Information Administration",
    "source_url": "https://www.eia.gov/petroleum/gasdiesel/",
+   "events": [
+    {
+     "id": "iran_war",
+     "kind": "since",
+     "label": "since the Iran war began",
+     "short": "Iran war",
+     "range_label": "",
+     "start": "2026-02-28",
+     "end": null,
+     "from_date": "2026-02-23",
+     "from_period": "the week of Feb. 23, 2026",
+     "from_value": 2.937,
+     "from_display": "$2.937",
+     "to_date": "2026-10-12",
+     "to_period": "the week of Oct. 12, 2026",
+     "to_value": 4.331,
+     "to_display": "$4.331",
+     "change": 1.3940000000000006,
+     "pct_change": 47.4633980251958
+    }
+   ],
    "fred_url": "https://fred.stlouisfed.org/series/GASREGW",
    "baseline_value": 3.0755,
    "baseline_points": 4,
@@ -1950,7 +2022,7 @@
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-14T18:39:57+00:00",
+   "fetched_at": "2026-10-15T14:59:15+00:00",
    "stale": false
   },
   {
@@ -1965,6 +2037,27 @@
    "frequency": "weekly",
    "source": "U.S. Energy Information Administration",
    "source_url": "https://www.eia.gov/petroleum/gasdiesel/",
+   "events": [
+    {
+     "id": "iran_war",
+     "kind": "since",
+     "label": "since the Iran war began",
+     "short": "Iran war",
+     "range_label": "",
+     "start": "2026-02-28",
+     "end": null,
+     "from_date": "2026-02-23",
+     "from_period": "the week of Feb. 23, 2026",
+     "from_value": 3.809,
+     "from_display": "$3.81",
+     "to_date": "2026-10-12",
+     "to_period": "the week of Oct. 12, 2026",
+     "to_value": 6.179,
+     "to_display": "$6.18",
+     "change": 2.37,
+     "pct_change": 62.22105539511683
+    }
+   ],
    "fred_url": "https://fred.stlouisfed.org/series/GASDESW",
    "baseline_value": 3.6342499999999998,
    "baseline_points": 4,
@@ -2355,9 +2448,9 @@
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-14T18:39:57+00:00",
+   "fetched_at": "2026-10-15T14:59:15+00:00",
    "stale": false
   }
  ],
- "generated_at": "2026-10-14T18:39:57+00:00"
+ "generated_at": "2026-10-15T14:59:15+00:00"
 }
