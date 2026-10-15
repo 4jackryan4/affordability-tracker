@@ -29,7 +29,7 @@ Each card shows the latest value, the change since January 2025, the change from
 - **Baseline:** the January 2025 reading for monthly series; the average of all weeks in January 2025 for weekly series.
 - **Percent change:** (latest − baseline) ÷ baseline. If the rounded prices on the page would give a different percent than the true one, the page shows one more decimal so anyone re-checking gets the same answer.
 - **Since the Iran war began** (gas, diesel, mortgage rates, overall prices): change from the last reading before Feb. 28, 2026 to the latest. Shown only where war-driven fuel and oil costs are a documented driver.
-- **While tariffs were in effect** (coffee, bananas): change from March 2025, the last reading before the April 5, 2025 tariffs, to November 2025, when both were exempted. Both events are defined in `config/series.json` under `events`; add an event ID to a series' `events` list to show it on that card.
+  The event is defined in `config/series.json` under `events`; add its ID to a series' `events` list to show it on that card.
 - **Mortgage payment:** new 30-year fixed loan of $400,000, principal and interest only.
 - **Electricity and utility gas** are not seasonally adjusted, so their cards point to the year-over-year change as the cleaner comparison.
 - **If a source is down,** that stat keeps its last good numbers and is flagged as stale on the page. Nothing is ever filled in or estimated.

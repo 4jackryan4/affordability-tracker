@@ -141,7 +141,7 @@
     return el;
   }
 
-  // One line per event (Iran war, 2025 tariffs), under the "since January 2025" line.
+  // One line per event (e.g. the Iran war), under the "since January 2025" line.
   function eventLines(s) {
     return (s.events || []).map(function (ev) {
       var amount = s.kind === "rate"
@@ -270,7 +270,7 @@
         lbl.textContent = MONTHS[dt.getUTCMonth()] + " ’" + String(dt.getUTCFullYear()).slice(2);
       }
 
-      // event markers: a shaded band for a window (tariffs), a line for a start date (war)
+      // event markers: a shaded band for a date window, a line for a start date
       (s.events || []).forEach(function (ev) {
         var es = parseDate(ev.start).getTime();
         if (es < t0 || es > t1) return;

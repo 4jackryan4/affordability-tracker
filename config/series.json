@@ -12,15 +12,6 @@
       "short": "Iran war",
       "start": "2026-02-28",
       "note": "Change from the last reading before the war began on Feb. 28, 2026 (February for monthly data; the last week of February for weekly data) to the latest reading. Shown only where fuel and oil costs from the war are a documented driver."
-    },
-    "tariffs_2025": {
-      "kind": "window",
-      "label": "while tariffs were in effect",
-      "short": "Tariffs",
-      "start": "2025-04-05",
-      "end": "2025-11-13",
-      "range_label": "April–Nov. 2025",
-      "note": "Change from March 2025, the last reading before the April 5, 2025 tariffs took effect, to November 2025, when these products were exempted on Nov. 13. Shown only for tracked products that were tariffed and where economists identify tariffs as a contributor alongside other factors."
     }
   },
   "series": [
@@ -79,10 +70,7 @@
       "frequency": "monthly",
       "phrase": "The average price of a pound of ground coffee",
       "source": "Bureau of Labor Statistics",
-      "source_url": "https://data.bls.gov/timeseries/APU0000717311",
-      "events": [
-        "tariffs_2025"
-      ]
+      "source_url": "https://data.bls.gov/timeseries/APU0000717311"
     },
     {
       "id": "APU0000706111",
@@ -124,10 +112,7 @@
       "frequency": "monthly",
       "phrase": "The average price of a pound of bananas",
       "source": "Bureau of Labor Statistics",
-      "source_url": "https://data.bls.gov/timeseries/APU0000711211",
-      "events": [
-        "tariffs_2025"
-      ]
+      "source_url": "https://data.bls.gov/timeseries/APU0000711211"
     },
     {
       "id": "CUSR0000SEHA",

@@ -346,7 +346,7 @@ def main() -> int:
         w = csv.writer(fh)
         w.writerow(["stat", "measure", "latest_period", "latest_value", "baseline_jan_2025",
                     "change", "pct_change_since_jan_2025", "pct_change_year_over_year",
-                    "pct_change_since_iran_war", "pct_change_during_2025_tariffs",
+                    "pct_change_since_iran_war",
                     "source", "fred_series", "sentence"])
         for e in results:
             if "latest_value" not in e:
@@ -355,7 +355,7 @@ def main() -> int:
                         round(e["baseline_value"], 4), round(e["change"], 4), round(e["pct_change"], 2),
                         round(e["year_ago_pct_change"], 2) if "year_ago_pct_change" in e else "",
                         *[next((round(x["pct_change"], 2) for x in e.get("events", []) if x["id"] == k), "")
-                          for k in ("iran_war", "tariffs_2025")],
+                          for k in ("iran_war",)],
                         e["source"], e["id"], e["sentence"]])
 
     if failures:
