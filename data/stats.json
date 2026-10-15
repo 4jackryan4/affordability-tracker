@@ -136,7 +136,7 @@
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-15T14:59:15+00:00",
+   "fetched_at": "2026-10-15T17:53:54+00:00",
    "stale": false
   },
   {
@@ -249,7 +249,7 @@
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-15T14:59:15+00:00",
+   "fetched_at": "2026-10-15T17:53:54+00:00",
    "stale": false
   },
   {
@@ -363,7 +363,7 @@
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-15T14:59:15+00:00",
+   "fetched_at": "2026-10-15T17:53:54+00:00",
    "stale": false
   },
   {
@@ -477,7 +477,7 @@
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-15T14:59:15+00:00",
+   "fetched_at": "2026-10-15T17:53:54+00:00",
    "stale": false
   },
   {
@@ -591,7 +591,7 @@
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-15T14:59:15+00:00",
+   "fetched_at": "2026-10-15T17:53:54+00:00",
    "stale": false
   },
   {
@@ -705,7 +705,7 @@
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-15T14:59:15+00:00",
+   "fetched_at": "2026-10-15T17:53:54+00:00",
    "stale": false
   },
   {
@@ -819,7 +819,7 @@
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-15T14:59:15+00:00",
+   "fetched_at": "2026-10-15T17:53:54+00:00",
    "stale": false
   },
   {
@@ -932,7 +932,7 @@
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-15T14:59:15+00:00",
+   "fetched_at": "2026-10-15T17:53:54+00:00",
    "stale": false
   },
   {
@@ -961,8 +961,8 @@
      "from_period": "the week of Feb. 26, 2026",
      "from_value": 5.98,
      "from_display": "5.98%",
-     "to_date": "2026-10-08",
-     "to_period": "the week of Oct. 8, 2026",
+     "to_date": "2026-10-15",
+     "to_period": "the week of Oct. 15, 2026",
      "to_value": 7.4,
      "to_display": "7.40%",
      "change": 1.42,
@@ -973,16 +973,16 @@
    "baseline_value": 6.958,
    "baseline_points": 5,
    "baseline_display": "6.96%",
-   "latest_date": "2026-10-08",
-   "latest_period": "the week of Oct. 8, 2026",
+   "latest_date": "2026-10-15",
+   "latest_period": "the week of Oct. 15, 2026",
    "latest_value": 7.4,
    "latest_display": "7.40%",
    "change": 0.44200000000000017,
    "pct_change": 6.352400114975571,
-   "year_ago_date": "2025-10-09",
-   "year_ago_value": 6.3,
-   "year_ago_pct_change": 17.46031746031747,
-   "year_ago_change": 1.1000000000000005,
+   "year_ago_date": "2025-10-16",
+   "year_ago_value": 6.27,
+   "year_ago_pct_change": 18.02232854864435,
+   "year_ago_change": 1.1300000000000008,
    "mortgage": {
     "loan_amount": 400000,
     "payment_baseline": 2649.93673458584,
@@ -990,7 +990,7 @@
     "monthly_diff": 119.58246565050194,
     "annual_diff": 1434.9895878060233
    },
-   "sentence": "The average 30-year mortgage rate was 7.40% in the week of Oct. 8, 2026, up 0.44 percentage points from the January 2025 average of 6.96% (Freddie Mac Primary Mortgage Market Survey). On a new $400,000 loan, that is about $120 more a month, or $1,435 a year, in principal and interest.",
+   "sentence": "The average 30-year mortgage rate was 7.40% in the week of Oct. 15, 2026, up 0.44 percentage points from the January 2025 average of 6.96% (Freddie Mac Primary Mortgage Market Survey). On a new $400,000 loan, that is about $120 more a month, or $1,435 a year, in principal and interest.",
    "observations": [
     [
      "2025-01-02",
@@ -1363,10 +1363,14 @@
     [
      "2026-10-08",
      7.4
+    ],
+    [
+     "2026-10-15",
+     7.4
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-15T14:59:15+00:00",
+   "fetched_at": "2026-10-15T17:53:54+00:00",
    "stale": false
   },
   {
@@ -1481,7 +1485,7 @@
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-15T14:59:15+00:00",
+   "fetched_at": "2026-10-15T17:53:54+00:00",
    "stale": false
   },
   {
@@ -1596,7 +1600,7 @@
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-15T14:59:15+00:00",
+   "fetched_at": "2026-10-15T17:53:54+00:00",
    "stale": false
   },
   {
@@ -2022,7 +2026,7 @@
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-15T14:59:15+00:00",
+   "fetched_at": "2026-10-15T17:53:54+00:00",
    "stale": false
   },
   {
@@ -2448,9 +2452,9 @@
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-15T14:59:15+00:00",
+   "fetched_at": "2026-10-15T17:53:54+00:00",
    "stale": false
   }
  ],
- "generated_at": "2026-10-15T14:59:15+00:00"
+ "generated_at": "2026-10-15T17:53:54+00:00"
 }
