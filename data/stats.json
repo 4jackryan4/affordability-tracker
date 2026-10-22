@@ -136,7 +136,7 @@
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-15T17:53:54+00:00",
+   "fetched_at": "2026-10-22T18:10:19+00:00",
    "stale": false
   },
   {
@@ -249,7 +249,7 @@
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-15T17:53:54+00:00",
+   "fetched_at": "2026-10-22T18:10:19+00:00",
    "stale": false
   },
   {
@@ -363,7 +363,7 @@
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-15T17:53:54+00:00",
+   "fetched_at": "2026-10-22T18:10:19+00:00",
    "stale": false
   },
   {
@@ -477,7 +477,7 @@
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-15T17:53:54+00:00",
+   "fetched_at": "2026-10-22T18:10:19+00:00",
    "stale": false
   },
   {
@@ -591,7 +591,7 @@
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-15T17:53:54+00:00",
+   "fetched_at": "2026-10-22T18:10:19+00:00",
    "stale": false
   },
   {
@@ -705,7 +705,7 @@
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-15T17:53:54+00:00",
+   "fetched_at": "2026-10-22T18:10:19+00:00",
    "stale": false
   },
   {
@@ -819,7 +819,7 @@
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-15T17:53:54+00:00",
+   "fetched_at": "2026-10-22T18:10:19+00:00",
    "stale": false
   },
   {
@@ -932,7 +932,7 @@
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-15T17:53:54+00:00",
+   "fetched_at": "2026-10-22T18:10:19+00:00",
    "stale": false
   },
   {
@@ -961,36 +961,36 @@
      "from_period": "the week of Feb. 26, 2026",
      "from_value": 5.98,
      "from_display": "5.98%",
-     "to_date": "2026-10-15",
-     "to_period": "the week of Oct. 15, 2026",
-     "to_value": 7.4,
-     "to_display": "7.40%",
-     "change": 1.42,
-     "pct_change": 23.74581939799331
+     "to_date": "2026-10-22",
+     "to_period": "the week of Oct. 22, 2026",
+     "to_value": 7.32,
+     "to_display": "7.32%",
+     "change": 1.3399999999999999,
+     "pct_change": 22.408026755852838
     }
    ],
    "fred_url": "https://fred.stlouisfed.org/series/MORTGAGE30US",
    "baseline_value": 6.958,
    "baseline_points": 5,
    "baseline_display": "6.96%",
-   "latest_date": "2026-10-15",
-   "latest_period": "the week of Oct. 15, 2026",
-   "latest_value": 7.4,
-   "latest_display": "7.40%",
-   "change": 0.44200000000000017,
-   "pct_change": 6.352400114975571,
-   "year_ago_date": "2025-10-16",
-   "year_ago_value": 6.27,
-   "year_ago_pct_change": 18.02232854864435,
-   "year_ago_change": 1.1300000000000008,
+   "latest_date": "2026-10-22",
+   "latest_period": "the week of Oct. 22, 2026",
+   "latest_value": 7.32,
+   "latest_display": "7.32%",
+   "change": 0.3620000000000001,
+   "pct_change": 5.202644438056915,
+   "year_ago_date": "2025-10-23",
+   "year_ago_value": 6.19,
+   "year_ago_pct_change": 18.25525040387722,
+   "year_ago_change": 1.13,
    "mortgage": {
     "loan_amount": 400000,
     "payment_baseline": 2649.93673458584,
-    "payment_latest": 2769.519200236342,
-    "monthly_diff": 119.58246565050194,
-    "annual_diff": 1434.9895878060233
+    "payment_latest": 2747.722482386306,
+    "monthly_diff": 97.7857478004662,
+    "annual_diff": 1173.4289736055944
    },
-   "sentence": "The average 30-year mortgage rate was 7.40% in the week of Oct. 15, 2026, up 0.44 percentage points from the January 2025 average of 6.96% (Freddie Mac Primary Mortgage Market Survey). On a new $400,000 loan, that is about $120 more a month, or $1,435 a year, in principal and interest.",
+   "sentence": "The average 30-year mortgage rate was 7.32% in the week of Oct. 22, 2026, up 0.36 percentage points from the January 2025 average of 6.96% (Freddie Mac Primary Mortgage Market Survey). On a new $400,000 loan, that is about $98 more a month, or $1,173 a year, in principal and interest.",
    "observations": [
     [
      "2025-01-02",
@@ -1367,10 +1367,14 @@
     [
      "2026-10-15",
      7.4
+    ],
+    [
+     "2026-10-22",
+     7.32
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-15T17:53:54+00:00",
+   "fetched_at": "2026-10-22T18:10:19+00:00",
    "stale": false
   },
   {
@@ -1485,7 +1489,7 @@
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-15T17:53:54+00:00",
+   "fetched_at": "2026-10-22T18:10:19+00:00",
    "stale": false
   },
   {
@@ -1600,7 +1604,7 @@
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-15T17:53:54+00:00",
+   "fetched_at": "2026-10-22T18:10:19+00:00",
    "stale": false
   },
   {
@@ -1628,29 +1632,29 @@
      "from_period": "the week of Feb. 23, 2026",
      "from_value": 2.937,
      "from_display": "$2.937",
-     "to_date": "2026-10-12",
-     "to_period": "the week of Oct. 12, 2026",
-     "to_value": 4.331,
-     "to_display": "$4.331",
-     "change": 1.3940000000000006,
-     "pct_change": 47.4633980251958
+     "to_date": "2026-10-19",
+     "to_period": "the week of Oct. 19, 2026",
+     "to_value": 4.284,
+     "to_display": "$4.284",
+     "change": 1.347,
+     "pct_change": 45.86312563840654
     }
    ],
    "fred_url": "https://fred.stlouisfed.org/series/GASREGW",
    "baseline_value": 3.0755,
    "baseline_points": 4,
    "baseline_display": "$3.075",
-   "latest_date": "2026-10-12",
-   "latest_period": "the week of Oct. 12, 2026",
-   "latest_value": 4.331,
-   "latest_display": "$4.331",
-   "change": 1.2555000000000005,
-   "pct_change": 40.822630466590816,
-   "year_ago_date": "2025-10-13",
-   "year_ago_value": 3.061,
-   "year_ago_pct_change": 41.48970924534468,
-   "year_ago_change": 1.2700000000000005,
-   "sentence": "The average price of a gallon of regular gas was $4.331 in the week of Oct. 12, 2026, up 40.8% from the January 2025 average of $3.075 (U.S. Energy Information Administration).",
+   "latest_date": "2026-10-19",
+   "latest_period": "the week of Oct. 19, 2026",
+   "latest_value": 4.284,
+   "latest_display": "$4.284",
+   "change": 1.2085,
+   "pct_change": 39.29442367094781,
+   "year_ago_date": "2025-10-20",
+   "year_ago_value": 3.019,
+   "year_ago_pct_change": 41.901291818482925,
+   "year_ago_change": 1.2649999999999997,
+   "sentence": "The average price of a gallon of regular gas was $4.284 in the week of Oct. 19, 2026, up 39.3% from the January 2025 average of $3.075 (U.S. Energy Information Administration).",
    "observations": [
     [
      "2025-01-06",
@@ -2023,10 +2027,14 @@
     [
      "2026-10-12",
      4.331
+    ],
+    [
+     "2026-10-19",
+     4.284
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-15T17:53:54+00:00",
+   "fetched_at": "2026-10-22T18:10:19+00:00",
    "stale": false
   },
   {
@@ -2054,29 +2062,29 @@
      "from_period": "the week of Feb. 23, 2026",
      "from_value": 3.809,
      "from_display": "$3.81",
-     "to_date": "2026-10-12",
-     "to_period": "the week of Oct. 12, 2026",
-     "to_value": 6.179,
-     "to_display": "$6.18",
-     "change": 2.37,
-     "pct_change": 62.22105539511683
+     "to_date": "2026-10-19",
+     "to_period": "the week of Oct. 19, 2026",
+     "to_value": 6.276,
+     "to_display": "$6.28",
+     "change": 2.4669999999999996,
+     "pct_change": 64.76765555263847
     }
    ],
    "fred_url": "https://fred.stlouisfed.org/series/GASDESW",
    "baseline_value": 3.6342499999999998,
    "baseline_points": 4,
    "baseline_display": "$3.634",
-   "latest_date": "2026-10-12",
-   "latest_period": "the week of Oct. 12, 2026",
-   "latest_value": 6.179,
-   "latest_display": "$6.179",
-   "change": 2.5447500000000005,
-   "pct_change": 70.02132489509529,
-   "year_ago_date": "2025-10-13",
-   "year_ago_value": 3.665,
-   "year_ago_pct_change": 68.59481582537518,
-   "year_ago_change": 2.5140000000000002,
-   "sentence": "The average price of a gallon of diesel was $6.179 in the week of Oct. 12, 2026, up 70.0% from the January 2025 average of $3.634 (U.S. Energy Information Administration).",
+   "latest_date": "2026-10-19",
+   "latest_period": "the week of Oct. 19, 2026",
+   "latest_value": 6.276,
+   "latest_display": "$6.276",
+   "change": 2.64175,
+   "pct_change": 72.69037628121346,
+   "year_ago_date": "2025-10-20",
+   "year_ago_value": 3.62,
+   "year_ago_pct_change": 73.37016574585634,
+   "year_ago_change": 2.6559999999999997,
+   "sentence": "The average price of a gallon of diesel was $6.276 in the week of Oct. 19, 2026, up 72.7% from the January 2025 average of $3.634 (U.S. Energy Information Administration).",
    "observations": [
     [
      "2025-01-06",
@@ -2449,12 +2457,16 @@
     [
      "2026-10-12",
      6.179
+    ],
+    [
+     "2026-10-19",
+     6.276
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-15T17:53:54+00:00",
+   "fetched_at": "2026-10-22T18:10:19+00:00",
    "stale": false
   }
  ],
- "generated_at": "2026-10-15T17:53:54+00:00"
+ "generated_at": "2026-10-22T18:10:19+00:00"
 }
