@@ -136,7 +136,7 @@
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-22T18:10:19+00:00",
+   "fetched_at": "2026-10-27T18:59:17+00:00",
    "stale": false
   },
   {
@@ -249,7 +249,7 @@
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-22T18:10:19+00:00",
+   "fetched_at": "2026-10-27T18:59:17+00:00",
    "stale": false
   },
   {
@@ -363,7 +363,7 @@
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-22T18:10:19+00:00",
+   "fetched_at": "2026-10-27T18:59:17+00:00",
    "stale": false
   },
   {
@@ -477,7 +477,7 @@
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-22T18:10:19+00:00",
+   "fetched_at": "2026-10-27T18:59:17+00:00",
    "stale": false
   },
   {
@@ -591,7 +591,7 @@
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-22T18:10:19+00:00",
+   "fetched_at": "2026-10-27T18:59:17+00:00",
    "stale": false
   },
   {
@@ -705,7 +705,7 @@
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-22T18:10:19+00:00",
+   "fetched_at": "2026-10-27T18:59:17+00:00",
    "stale": false
   },
   {
@@ -819,7 +819,7 @@
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-22T18:10:19+00:00",
+   "fetched_at": "2026-10-27T18:59:17+00:00",
    "stale": false
   },
   {
@@ -932,7 +932,7 @@
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-22T18:10:19+00:00",
+   "fetched_at": "2026-10-27T18:59:17+00:00",
    "stale": false
   },
   {
@@ -1374,7 +1374,7 @@
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-22T18:10:19+00:00",
+   "fetched_at": "2026-10-27T18:59:17+00:00",
    "stale": false
   },
   {
@@ -1489,7 +1489,7 @@
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-22T18:10:19+00:00",
+   "fetched_at": "2026-10-27T18:59:17+00:00",
    "stale": false
   },
   {
@@ -1604,7 +1604,7 @@
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-22T18:10:19+00:00",
+   "fetched_at": "2026-10-27T18:59:17+00:00",
    "stale": false
   },
   {
@@ -1632,29 +1632,29 @@
      "from_period": "the week of Feb. 23, 2026",
      "from_value": 2.937,
      "from_display": "$2.937",
-     "to_date": "2026-10-19",
-     "to_period": "the week of Oct. 19, 2026",
-     "to_value": 4.284,
-     "to_display": "$4.284",
-     "change": 1.347,
-     "pct_change": 45.86312563840654
+     "to_date": "2026-10-26",
+     "to_period": "the week of Oct. 26, 2026",
+     "to_value": 4.269,
+     "to_display": "$4.269",
+     "change": 1.3320000000000003,
+     "pct_change": 45.352400408580195
     }
    ],
    "fred_url": "https://fred.stlouisfed.org/series/GASREGW",
    "baseline_value": 3.0755,
    "baseline_points": 4,
    "baseline_display": "$3.075",
-   "latest_date": "2026-10-19",
-   "latest_period": "the week of Oct. 19, 2026",
-   "latest_value": 4.284,
-   "latest_display": "$4.284",
-   "change": 1.2085,
-   "pct_change": 39.29442367094781,
-   "year_ago_date": "2025-10-20",
-   "year_ago_value": 3.019,
-   "year_ago_pct_change": 41.901291818482925,
-   "year_ago_change": 1.2649999999999997,
-   "sentence": "The average price of a gallon of regular gas was $4.284 in the week of Oct. 19, 2026, up 39.3% from the January 2025 average of $3.075 (U.S. Energy Information Administration).",
+   "latest_date": "2026-10-26",
+   "latest_period": "the week of Oct. 26, 2026",
+   "latest_value": 4.269,
+   "latest_display": "$4.269",
+   "change": 1.1935000000000002,
+   "pct_change": 38.806698097870274,
+   "year_ago_date": "2025-10-27",
+   "year_ago_value": 3.035,
+   "year_ago_pct_change": 40.658978583196046,
+   "year_ago_change": 1.234,
+   "sentence": "The average price of a gallon of regular gas was $4.269 in the week of Oct. 26, 2026, up 38.8% from the January 2025 average of $3.075 (U.S. Energy Information Administration).",
    "observations": [
     [
      "2025-01-06",
@@ -2031,10 +2031,14 @@
     [
      "2026-10-19",
      4.284
+    ],
+    [
+     "2026-10-26",
+     4.269
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-22T18:10:19+00:00",
+   "fetched_at": "2026-10-27T18:59:17+00:00",
    "stale": false
   },
   {
@@ -2061,30 +2065,30 @@
      "from_date": "2026-02-23",
      "from_period": "the week of Feb. 23, 2026",
      "from_value": 3.809,
-     "from_display": "$3.81",
-     "to_date": "2026-10-19",
-     "to_period": "the week of Oct. 19, 2026",
-     "to_value": 6.276,
-     "to_display": "$6.28",
-     "change": 2.4669999999999996,
-     "pct_change": 64.76765555263847
+     "from_display": "$3.809",
+     "to_date": "2026-10-26",
+     "to_period": "the week of Oct. 26, 2026",
+     "to_value": 6.352,
+     "to_display": "$6.352",
+     "change": 2.543,
+     "pct_change": 66.76292990286164
     }
    ],
    "fred_url": "https://fred.stlouisfed.org/series/GASDESW",
    "baseline_value": 3.6342499999999998,
    "baseline_points": 4,
    "baseline_display": "$3.634",
-   "latest_date": "2026-10-19",
-   "latest_period": "the week of Oct. 19, 2026",
-   "latest_value": 6.276,
-   "latest_display": "$6.276",
-   "change": 2.64175,
-   "pct_change": 72.69037628121346,
-   "year_ago_date": "2025-10-20",
-   "year_ago_value": 3.62,
-   "year_ago_pct_change": 73.37016574585634,
-   "year_ago_change": 2.6559999999999997,
-   "sentence": "The average price of a gallon of diesel was $6.276 in the week of Oct. 19, 2026, up 72.7% from the January 2025 average of $3.634 (U.S. Energy Information Administration).",
+   "latest_date": "2026-10-26",
+   "latest_period": "the week of Oct. 26, 2026",
+   "latest_value": 6.352,
+   "latest_display": "$6.352",
+   "change": 2.7177500000000006,
+   "pct_change": 74.7815918002339,
+   "year_ago_date": "2025-10-27",
+   "year_ago_value": 3.718,
+   "year_ago_pct_change": 70.84454007530931,
+   "year_ago_change": 2.6340000000000003,
+   "sentence": "The average price of a gallon of diesel was $6.352 in the week of Oct. 26, 2026, up 74.8% from the January 2025 average of $3.634 (U.S. Energy Information Administration).",
    "observations": [
     [
      "2025-01-06",
@@ -2461,12 +2465,16 @@
     [
      "2026-10-19",
      6.276
+    ],
+    [
+     "2026-10-26",
+     6.352
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-22T18:10:19+00:00",
+   "fetched_at": "2026-10-27T18:59:17+00:00",
    "stale": false
   }
  ],
- "generated_at": "2026-10-22T18:10:19+00:00"
+ "generated_at": "2026-10-27T18:59:17+00:00"
 }
