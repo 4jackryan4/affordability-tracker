@@ -136,7 +136,7 @@
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-27T18:59:17+00:00",
+   "fetched_at": "2026-10-29T19:13:36+00:00",
    "stale": false
   },
   {
@@ -249,7 +249,7 @@
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-27T18:59:17+00:00",
+   "fetched_at": "2026-10-29T19:13:36+00:00",
    "stale": false
   },
   {
@@ -363,7 +363,7 @@
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-27T18:59:17+00:00",
+   "fetched_at": "2026-10-29T19:13:36+00:00",
    "stale": false
   },
   {
@@ -477,7 +477,7 @@
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-27T18:59:17+00:00",
+   "fetched_at": "2026-10-29T19:13:36+00:00",
    "stale": false
   },
   {
@@ -591,7 +591,7 @@
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-27T18:59:17+00:00",
+   "fetched_at": "2026-10-29T19:13:36+00:00",
    "stale": false
   },
   {
@@ -705,7 +705,7 @@
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-27T18:59:17+00:00",
+   "fetched_at": "2026-10-29T19:13:36+00:00",
    "stale": false
   },
   {
@@ -819,7 +819,7 @@
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-27T18:59:17+00:00",
+   "fetched_at": "2026-10-29T19:13:36+00:00",
    "stale": false
   },
   {
@@ -932,7 +932,7 @@
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-27T18:59:17+00:00",
+   "fetched_at": "2026-10-29T19:13:36+00:00",
    "stale": false
   },
   {
@@ -961,36 +961,36 @@
      "from_period": "the week of Feb. 26, 2026",
      "from_value": 5.98,
      "from_display": "5.98%",
-     "to_date": "2026-10-22",
-     "to_period": "the week of Oct. 22, 2026",
-     "to_value": 7.32,
-     "to_display": "7.32%",
-     "change": 1.3399999999999999,
-     "pct_change": 22.408026755852838
+     "to_date": "2026-10-29",
+     "to_period": "the week of Oct. 29, 2026",
+     "to_value": 7.24,
+     "to_display": "7.24%",
+     "change": 1.2599999999999998,
+     "pct_change": 21.07023411371237
     }
    ],
    "fred_url": "https://fred.stlouisfed.org/series/MORTGAGE30US",
    "baseline_value": 6.958,
    "baseline_points": 5,
    "baseline_display": "6.96%",
-   "latest_date": "2026-10-22",
-   "latest_period": "the week of Oct. 22, 2026",
-   "latest_value": 7.32,
-   "latest_display": "7.32%",
-   "change": 0.3620000000000001,
-   "pct_change": 5.202644438056915,
-   "year_ago_date": "2025-10-23",
-   "year_ago_value": 6.19,
-   "year_ago_pct_change": 18.25525040387722,
-   "year_ago_change": 1.13,
+   "latest_date": "2026-10-29",
+   "latest_period": "the week of Oct. 29, 2026",
+   "latest_value": 7.24,
+   "latest_display": "7.24%",
+   "change": 0.28200000000000003,
+   "pct_change": 4.0528887611382585,
+   "year_ago_date": "2025-10-30",
+   "year_ago_value": 6.17,
+   "year_ago_pct_change": 17.341977309562402,
+   "year_ago_change": 1.0700000000000003,
    "mortgage": {
     "loan_amount": 400000,
     "payment_baseline": 2649.93673458584,
-    "payment_latest": 2747.722482386306,
-    "monthly_diff": 97.7857478004662,
-    "annual_diff": 1173.4289736055944
+    "payment_latest": 2725.992553823052,
+    "monthly_diff": 76.05581923721184,
+    "annual_diff": 912.669830846542
    },
-   "sentence": "The average 30-year mortgage rate was 7.32% in the week of Oct. 22, 2026, up 0.36 percentage points from the January 2025 average of 6.96% (Freddie Mac Primary Mortgage Market Survey). On a new $400,000 loan, that is about $98 more a month, or $1,173 a year, in principal and interest.",
+   "sentence": "The average 30-year mortgage rate was 7.24% in the week of Oct. 29, 2026, up 0.28 percentage points from the January 2025 average of 6.96% (Freddie Mac Primary Mortgage Market Survey). On a new $400,000 loan, that is about $76 more a month, or $913 a year, in principal and interest.",
    "observations": [
     [
      "2025-01-02",
@@ -1371,10 +1371,14 @@
     [
      "2026-10-22",
      7.32
+    ],
+    [
+     "2026-10-29",
+     7.24
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-27T18:59:17+00:00",
+   "fetched_at": "2026-10-29T19:13:36+00:00",
    "stale": false
   },
   {
@@ -1489,7 +1493,7 @@
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-27T18:59:17+00:00",
+   "fetched_at": "2026-10-29T19:13:36+00:00",
    "stale": false
   },
   {
@@ -1604,7 +1608,7 @@
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-27T18:59:17+00:00",
+   "fetched_at": "2026-10-29T19:13:36+00:00",
    "stale": false
   },
   {
@@ -2038,7 +2042,7 @@
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-27T18:59:17+00:00",
+   "fetched_at": "2026-10-29T19:13:36+00:00",
    "stale": false
   },
   {
@@ -2472,9 +2476,9 @@
     ]
    ],
    "fetched_via": "fred-api",
-   "fetched_at": "2026-10-27T18:59:17+00:00",
+   "fetched_at": "2026-10-29T19:13:36+00:00",
    "stale": false
   }
  ],
- "generated_at": "2026-10-27T18:59:17+00:00"
+ "generated_at": "2026-10-29T19:13:36+00:00"
 }
